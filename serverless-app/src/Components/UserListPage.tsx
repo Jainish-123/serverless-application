@@ -9,7 +9,7 @@ export const UserListPage: React.FC = () => {
             try {
                 const response = await userList();
                 setUsers(response.data.Users);
-                console.log(users);
+                // console.log(users);
             } catch (error) {
                 console.error('Error fetching users:', error);
             }
